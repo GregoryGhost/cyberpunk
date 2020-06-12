@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Пример верстки для песочницы.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <div class="sandbox">
+        <div class="sandbox__gallery">
+            <div class="sandbox__gallery-search">Поиск механики</div>
+            <div class="sandbox__gallery-list">
+                <ul>
+                    <li class="sandbox__gallery-item">Механика 1</li>
+                    <li class="sandbox__gallery-item">Механика 2</li>
+                    <li class="sandbox__gallery-item">Механика 3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sandbox__playground">
+            <div class="sandbox__toolbox">
+                <div class="sandbox__btn">Начать</div>
+                <div class="sandbox__btn">Перезагрузить</div>
+                <div class="sandbox__btn">Сообщить о проблеме</div>
+            </div>
+            <div class="sandbox__view"></div>
+            <div class="sandbox__info">
+                <div class="sandbox__algo-description">Описание выбранной механики</div>
+                <div class="sandbox__algo-log">Информация о ходе работы выбранной механики</div>
+                <div class="sandbox__common-log">Информация о работе песочницы</div>
+            </div>
+        </div>
+    </div>
+</body>

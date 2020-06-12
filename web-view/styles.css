@@ -1,0 +1,31 @@
+body {
+    background-color: #20262e;
+  }
+  
+  .sandbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #dfd9d1;
+    width: 90%;
+    font-size: 1.25em;
+  }
+  .sandbox__galerry-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: stretch;
+    margin-bottom: 1em;
+  }
+  .sandbox__galerry-item {
+    padding: 10px;
+    /* mind the gap */
+    margin-top: 1em;
+    --aug-inset: 5px;
+    --aug-border: 2px;
+    --aug-border-bg: #191970;
+    --aug-inset-bg: #1a1e25;
+  }

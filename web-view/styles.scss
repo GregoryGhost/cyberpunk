@@ -1,0 +1,53 @@
+body {
+    background-color: #20262e;
+}
+
+$base-font-color: #dfd9d1;
+$base-font-size: 1.25em;
+
+.sandbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: $base-font-color;
+    width: 90%;
+    font-size: $base-font-size;
+
+    &__galerry {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: stretch;
+            margin-bottom: 1em;
+        }
+
+        &-search {}
+
+        &-item {
+            padding: 10px; /* mind the gap */
+            margin-top: 1em;
+            --aug-inset: 5px;
+            --aug-border: 2px;
+            --aug-border-bg: #191970;
+            --aug-inset-bg: #1a1e25;
+        }
+    }
+
+    &__playground {}
+
+    &__view {}
+
+    &__info {}
+
+    &__algo-description,
+    &__algo-log,
+    &__common-log {}
+
+    &__btn {}
+
+    &__toolbox {}
+}
