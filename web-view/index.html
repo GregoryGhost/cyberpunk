@@ -5,22 +5,104 @@
     <title>Пример верстки для песочницы.</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
 
 <body>
-    <div class="sandbox">
-        <div class="sandbox__gallery">
-            <div class="sandbox__gallery-search">Поиск механики</div>
-            <div class="sandbox__gallery-list">
-                <ul>
-                    <li class="sandbox__gallery-item">Механика 1</li>
-                    <li class="sandbox__gallery-item">Механика 2</li>
-                    <li class="sandbox__gallery-item">Механика 3</li>
-                </ul>
+    <div class="sandbox drawer-frame-root">
+        <aside class="mdc-drawer">
+            <div class="mdc-drawer__content">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+                        <span class="mdc-list-item__text">Inbox</span>
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>
+                        <span class="mdc-list-item__text">Star</span>
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+                        <span class="mdc-list-item__text">Sent Mail</span>
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+                        <span class="mdc-list-item__text">Drafts</span>
+                    </a>
+
+                    <hr class="mdc-list-divider">
+                    <h6 class="mdc-list-group__subheader">Labels</h6>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+                        <span class="mdc-list-item__text">Family</span>
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+                        <span class="mdc-list-item__text">Friends</span>
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+                        <span class="mdc-list-item__text">Work</span>
+                    </a>
+                </nav>
             </div>
-        </div>
-        <div class="sandbox__playground">
+        </aside>
+        <!-- <div class="sandbox__gallery mdc-layout-grid__cell">
+            <label class="sandbox__gallery-search mdc-text-field mdc-text-field--filled mdc-text-field--fullwidth">
+                <span class="mdc-text-field__ripple"></span>
+                <input class="mdc-text-field__input" type="text" placeholder="Поиск">
+                <span class="mdc-line-ripple"></span>
+            </label>
+            <ul class="sandbox__gallery-list mdc-list mdc-list--two-line">
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 1</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 1</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 2</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 2</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 3</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 3</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 1</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 1</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 2</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 2</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 3</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 3</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 1</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 1</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 2</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 2</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 3</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 3</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 1</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 1</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 2</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 2</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 3</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 3</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 1</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 1</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 2</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 2</span></span></li>
+                <li class="mdc-list-item sandbox__gallery-item"><span class="mdc-list-item__text"><span
+                            class="mdc-list-item__primary-text">Название механики 3</span><span
+                            class="mdc-list-item__secondary-text">Описание механики 3</span></span></li>
+            </ul>
+        </div> -->
+        <div class="sandbox__playground mdc-layout-grid__cell">
             <div class="sandbox__toolbox">
                 <div class="sandbox__btn">Начать</div>
                 <div class="sandbox__btn">Перезагрузить</div>
