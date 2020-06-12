@@ -26,6 +26,9 @@ cabal.project.local~
 .HTF/
 .ghc.environment.*
 
+### Miso Haskell ###
+result
+
 ### Linux ###
 *~
 
