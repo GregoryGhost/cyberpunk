@@ -16,30 +16,10 @@ body {
 }
 
 .sandbox__gallery-search {
-    width: 95%;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }
 
-/* .sandbox {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #444;
-    width: 90%;
-    font-size: 1.25em;
-  }
-  .sandbox__galerry {
-    overflow-y: scroll;
-    overflow: hidden;
-  }
-  .sandbox__list {
-    overflow-y: scroll;
-  }
-
-  .sandbox__galerry-item {
-    padding: 10px;
-  } */
 .sandbox__playground {
     display: flex;
     flex-wrap: wrap;
