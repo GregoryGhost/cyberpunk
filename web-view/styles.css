@@ -1,29 +1,25 @@
 body {
     background-color: #e1e1db;
+}
+
+.sandbox {
     display: flex;
-    height: 100vh;
-  }
-  
-  .mdc-drawer-app-content {
-    flex: auto;
-    overflow: auto;
-    position: relative;
-  }
-  
-  .main-content {
-    overflow: auto;
-    height: 100%;
-  }
-  
-  .app-bar {
-    position: absolute;
-  }
-  
-  // only apply this style if below top app bar
-  .mdc-top-app-bar {
-    z-index: 7;
-  }
-  /* .sandbox {
+    height: 98vh;
+}
+
+.sandbox__gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.sandbox__gallery-search {
+    width: 95%;
+}
+
+/* .sandbox {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -43,12 +39,10 @@ body {
 
   .sandbox__galerry-item {
     padding: 10px;
-    /* mind the gap */
-    margin-top: 1em;
-  }
-  .sandbox__playground {
+  } */
+.sandbox__playground {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-  } */
+}
