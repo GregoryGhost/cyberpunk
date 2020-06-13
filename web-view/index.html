@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
 
 <body>
-    <div class="sandbox drawer-frame-root">
+    <div class="sandbox">
         <div class="sandbox__gallery">
             <aside class="mdc-drawer">
                 <div class="mdc-drawer__header">
@@ -119,11 +118,22 @@
                 </div>
             </aside>
         </div>
-        <div class="sandbox__playground mdc-layout-grid__cell">
+        <div class="sandbox__playground">
             <div class="sandbox__toolbox">
-                <div class="sandbox__btn">Начать</div>
-                <div class="sandbox__btn">Перезагрузить</div>
-                <div class="sandbox__btn">Сообщить о проблеме</div>
+                <div class="sandbox__btn-start mdc-touch-target-wrapper">
+                    <button class="mdc-button mdc-button--touch">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">ЗАПУСТИТь</span>
+                        <div class="mdc-button__touch"></div>
+                    </button>
+                </div>
+                <div class="sandbox__btn-send-issue mdc-touch-target-wrapper">
+                    <button class="mdc-button mdc-button--touch">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">Сообщить о проблеме</span>
+                        <div class="mdc-button__touch"></div>
+                    </button>
+                </div>
             </div>
             <div class="sandbox__view"></div>
             <div class="sandbox__info">

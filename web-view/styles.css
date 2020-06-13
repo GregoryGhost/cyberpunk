@@ -24,5 +24,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 80%;
+    padding: 1rem;
+}
+
+.sandbox__info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sandbox__toolbox {
+    display: flex;
+}
+
+.sandbox__btn-send-issue {
+    margin-left: auto;
 }
