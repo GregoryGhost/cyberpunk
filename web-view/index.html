@@ -136,11 +136,46 @@
                 </div>
             </div>
             <div class="sandbox__view"></div>
-            <div class="sandbox__info">
-                <div class="sandbox__algo-description">Описание выбранной механики</div>
-                <div class="sandbox__algo-log">Информация о ходе работы выбранной механики</div>
-                <div class="sandbox__common-log">Информация о работе песочницы</div>
+            <div class="mdc-tab-bar" role="tablist">
+                <div class="mdc-tab-scroller">
+                    <div class="sandbox__info mdc-tab-scroller__scroll-area">
+                        <div class="mdc-tab-scroller__scroll-content">
+                            <button class="sandbox__algo-description mdc-tab mdc-tab--active" role="tab"
+                                aria-selected="true" tabindex="0">
+                                <span class="mdc-tab__content">
+                                    <span class="mdc-tab__text-label">Описание механики</span>
+                                </span>
+                                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                    <span
+                                        class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                </span>
+                                <span class="mdc-tab__ripple"></span>
+                            </button>
+                            <button class="sandbox__algo-log mdc-tab" role="tab" aria-selected="true" tabindex="1">
+                                <span class="mdc-tab__content">
+                                    <span class="mdc-tab__text-label">Лог механики</span>
+                                </span>
+                                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                    <span
+                                        class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                </span>
+                                <span class="mdc-tab__ripple"></span>
+                            </button>
+                            <button class="sandbox__common-log mdc-tab" role="tab" aria-selected="true" tabindex="2">
+                                <span class="mdc-tab__content">
+                                    <span class="mdc-tab__text-label">Лог песочницы</span>
+                                </span>
+                                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                    <span
+                                        class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                </span>
+                                <span class="mdc-tab__ripple"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
