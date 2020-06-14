@@ -9,29 +9,18 @@ $base-font-size: 1.25em;
 
 .sandbox {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
-    color: $base-font-color;
-    width: 90%;
-    font-size: $base-font-size;
+    height: 98vh;
 
-    &__galerry {
+    &__gallery {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        overflow-y: auto;
+        justify-content: space-between;
+        width: 20%;
 
-        &-list {}
-
-        &-search {}
-
-        &-item {
-            padding: 10px;
-            /* mind the gap */
-            margin-top: 1em;
+        &-search {
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
         }
     }
 
@@ -39,28 +28,27 @@ $base-font-size: 1.25em;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        width: 80%;
+        padding: 1rem;
     }
 
     &__view {}
 
     &__info {
-        // display: flex;
-        // flex-wrap: wrap;
-        // flex-direction: row;
-        // justify-content: left;
+        display: flex;
+        justify-content: stretch;
     }
 
     &__algo-description,
     &__algo-log,
     &__common-log {}
 
-    &__btn {}
+    &__btn-send-issue {
+        margin-left: auto;
+    }
 
     &__toolbox {
-        // display: flex;
-        // flex-wrap: wrap;
-        // flex-direction: row;
-        // justify-content: left;
+        display: flex;
     }
 }
