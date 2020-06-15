@@ -8,6 +8,8 @@ cabal-version:       >=1.10
 executable app
   main-is:
     Main.hs
+  other-modules: 
+    Miso.Html.Property
   build-depends:
     base, miso
   if !impl(ghcjs)
