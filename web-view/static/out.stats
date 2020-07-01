@@ -1,13 +1,13 @@
 code size summary per package:
 
-base:                    399684
+base:                    399685
 containers-0.6.0.1-BAqcfV1UBBeCIRjPbUYeSG:38444
-ghc-prim:                27053
+ghc-prim:                27166
 ghcjs-base-0.2.0.0-JozYZ7GHc7JEfhDrWZm3NT:61412
 ghcjs-prim-0.1.1.0-EXzjGVHQlAS2XAXcu0iCbS:6539
 integer-gmp:             6320
-main:                    4135
-miso-1.3.0.0-52dlrGDRBluKwwO8KJ2SJ8:129754
+main:                    12098
+miso-1.3.0.0-52dlrGDRBluKwwO8KJ2SJ8:130301
 
 
 code size per module:
@@ -51,7 +51,7 @@ base
     GHC.MVar:                           244
     GHC.Maybe:                          174
     GHC.Ptr:                            180
-    GHC.STRef:                          14992
+    GHC.STRef:                          14993
     GHC.Show:                           4159
     GHC.Stack.CCS:                      1268
     GHC.Stack.Types:                    14568
@@ -68,7 +68,7 @@ ghc-prim
     GHC.Classes:                        139
     GHC.IntWord64:                      2617
     GHC.Tuple:                          3068
-    GHC.Types:                          19545
+    GHC.Types:                          19658
 
 ghcjs-base-0.2.0.0-JozYZ7GHc7JEfhDrWZm3NT
     GHCJS.Foreign.Internal:             5368
@@ -86,7 +86,8 @@ integer-gmp
     GHC.Integer.Type:                   6320
 
 main
-    Main:                               1946
+    Main:                               7963
+    Mehanics.Map.Map:                   1946
     Miso.Html.Property:                 2189
 
 miso-1.3.0.0-52dlrGDRBluKwwO8KJ2SJ8
@@ -94,12 +95,12 @@ miso-1.3.0.0-52dlrGDRBluKwwO8KJ2SJ8
     Miso.Delegate:                      2737
     Miso.Diff:                          303
     Miso.Effect:                        22993
-    Miso.Event.Types:                   3274
+    Miso.Event.Types:                   3819
     Miso.Html.Element:                  11329
     Miso.Html.Internal:                 10177
-    Miso.Html.Property:                 77322
+    Miso.Html.Property:                 77324
 
 
 
-packed metadata: 170996
+packed metadata: 177067
 
