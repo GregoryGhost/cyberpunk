@@ -1,37 +1,63 @@
 body {
-    background-color: #e1e1db;
-  }
-  
-  .sandbox {
-    display: flex;
-    height: 98vh;
-  }
-  .sandbox__gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 20%;
-  }
-  .sandbox__gallery-search {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-  }
-  .sandbox__playground {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 80%;
-    padding: 1rem;
-  }
-  .sandbox__info {
-    display: flex;
-    justify-content: stretch;
-  }
-  .sandbox__btn-send-issue {
-    margin-left: auto;
-  }
-  .sandbox__toolbox {
-    display: flex;
-  }
+  background-color: #e1e1db;
+}
+
+.sandbox {
+  display: flex;
+  height: 98vh;
+}
+.sandbox__gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 20%;
+}
+.sandbox__gallery-search {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.sandbox__playground {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  padding: 1rem;
+}
+.sandbox__view {
+  align-self: center;
+}
+.sandbox__info {
+  display: flex;
+  justify-content: stretch;
+}
+.sandbox__btn-send-issue {
+  margin-left: auto;
+}
+.sandbox__toolbox {
+  display: flex;
+}
+
+.game-map__wall, .game-map__path {
+  width: 10px;
+  height: 10px;
+}
+.game-map__wall {
+  border: 1px solid black;
+  background-color: black;
+}
+.game-map__path {
+  border: 1px solid white;
+  background-color: white;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  width: 10px;
+  height: 10px;
+}

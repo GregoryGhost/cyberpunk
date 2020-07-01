@@ -33,7 +33,9 @@ $base-font-size: 1.25em;
         padding: 1rem;
     }
 
-    &__view {}
+    &__view {
+        align-self: center;
+    }
 
     &__info {
         display: flex;
@@ -51,4 +53,34 @@ $base-font-size: 1.25em;
     &__toolbox {
         display: flex;
     }
+}
+
+
+.game-map {
+
+    &__wall,
+    &__path {
+        width: 10px;
+        height: 10px;
+    }
+
+    &__wall {
+        border: 1px solid black;
+        background-color: black;
+    }
+
+    &__path {
+        border: 1px solid white;
+        background-color: white;
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
 }
